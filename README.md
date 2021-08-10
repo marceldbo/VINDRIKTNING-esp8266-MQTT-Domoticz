@@ -33,11 +33,11 @@ Lastly, go to Domoticz and check if the virtual sensor starts to dispay a value 
 
 ## Background information
 
-The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls the leds and also outputs the serial TX data from the sensor. With the code we simply listen to the TX output of the uC, take 5 samples and calculate the average of these samples, create a MQTT message and publish the result to domoticz.
+The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls the leds and also outputs the serial TX data from the sensor. With the code we simply listen to the TX output of the uC, take 5 samples and calculate the average of these samples, create a MQTT message and publish the result to Domoticz.
 
-## ToDo
+## Still to do
 
-Using the ArduinoJSON library to dynamically create the payload message.
+Using the ArduinoJSON library to dynamically create the payload message, which is in my opinion a more elegant way of creating the payload message. 
 
 ## References and sources
 

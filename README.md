@@ -27,7 +27,7 @@ Now download the code from the repository to your system, unzip it and open the 
 * the unique identifier (idx) in the MQTT client connect section
 * the unique identifier (idx) in the MQTT Payload section
 
-After making these changes, do a Verify/Compile to check if everything is OK. If so, connect the Wemos via USB to your system and Upload the code. Open the Serial Monitor from the tools menu of the Arduino IDE. You should see the connectivity status, data acquisition and every 60 seconds the MQTT Payload message.
+After making these changes, do a Verify/Compile to check if everything is OK. If so, connect the Wemos via USB to your system and Upload the code. Open the Serial Monitor from the tools menu of the Arduino IDE. You should see the connectivity status, the data acquisition and every 60 seconds the MQTT Payload message.
 
 Lastly, go to Domoticz and check if the virtual sensor starts to dispay a value in ug/m3. In a healthy environment this should be a value between 2 and 50.
 

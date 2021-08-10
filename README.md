@@ -37,7 +37,7 @@ The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls
 
 ## Still to do
 
-Using the ArduinoJSON library to dynamically create the payload message, which is in my opinion a more elegant way of creating the payload message. The Wemos D1 Mini has plenty of pins available to add a BME280 sensor board or DS18B20 temperature sensor. The code can easily be adapted to accomodate these sensors.
+Using the ArduinoJSON library to dynamically create the payload message, which is in my opinion a more elegant way of creating the payload message. The Wemos D1 Mini has plenty of pins available to add a BME280 sensor board or one or more DS18B20 temperature sensors. The code can easily be adapted to accomodate these sensors.
 
 ## References and sources
 

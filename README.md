@@ -41,4 +41,4 @@ Using the ArduinoJSON library to dynamically create the payload message.
 
 ## References and sources
 
-- [Sören Beye](https://github.com/Hypfer/esp8266-vindriktning-particle-sensor) for the inspirational work and parts of the code.
+- Thanks to [Sören Beye](https://github.com/Hypfer/esp8266-vindriktning-particle-sensor) for the inspirational work and parts of the code.

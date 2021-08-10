@@ -6,7 +6,7 @@ The first step is to create a virtual sensor in Domoticz to obtain a unique iden
 
 ## Hardware
 
-Now it is time to open up the IKEA VINDRIKTNING by unscrewing the four screws in the back of the box. The front comes off and for ease of soldering, I recommend to disconnect the connectors and remove the three small screws. With the circuit board removed, solder wires to GND, 5V and the REST pin. The latter is actually the TX from the onboard microcontroller. Cut the wires to approximately 6cm and solder them to the GND, 5V and D2 respectively of a Wemos D2 Mini. 
+Now it is time to open up the IKEA VINDRIKTNING by unscrewing the four screws in the back of the box. The front comes off and for ease of soldering, I recommend to disconnect the connectors and remove the three small screws. With the circuit board removed, solder wires to GND, 5V and the REST pin. The latter is actually the TX from the onboard microcontroller. Cut the wires to approximately 6cm and solder them to the GND, 5V and D2 respectively of a Wemos D1 Mini. 
 
 ![wiring](./img/vr_to_wemos_wiring.jpg)
 

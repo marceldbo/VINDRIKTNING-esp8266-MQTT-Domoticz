@@ -16,8 +16,8 @@ The image above should give you an idea of the wiring. Alternatively, the round 
 
 The firmware can be built and flashed using the Arduino IDE. To do this, you need to add ESP8266 support by [using the Boards Manager](https://github.com/esp8266/Arduino#installing-with-boards-manager). You will also need to install the following libraries using the Library Manager:
 
-* PubSubClient
-* WiFiManager
+* ESP8266WiFi.h
+* PubSubClient.h
 
 Now download the code from the repository to your system, unzip it and open the .ino file in the Arduino IDE. Once open, follow the comments in the code and enter the following information:
 

@@ -37,7 +37,7 @@ The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls
 
 ## Still to do
 
-Making using of the ArduinoJSON library to dynamically create the payload message, which is in my opinion a more elegant way of creating the payload message. Also, the Wemos D1 Mini has plenty of pins available to add a BME280/BMP280 sensor board or a DS18B20 temperature sensor. The code can easily be adapted to accomodate these sensors.
+Dynamically create the payload message using the ArduinoJSON library, which is probably a more elegant way of creating the payload message. Also, the Wemos D1 Mini has plenty of pins available to add a BME280/BMP280 sensor board or a DS18B20 temperature sensor. The code can easily be adapted to accomodate these sensors. Another suggestion from the domoticz forum is to use the Alert Sensor Device to visualize the levels in color from grey to red e.g. good, moderate, potentially unhealthy, unhealthy, hazardous etc.
 
 ## References and sources
 

@@ -16,8 +16,8 @@ The image above should give you an idea of the wiring. Alternatively, the round 
 
 The firmware can be built and flashed using the Arduino IDE. To do this, you need to add ESP8266 support by [using the Boards Manager](https://github.com/esp8266/Arduino#installing-with-boards-manager). You will also need to install the following libraries using the Library Manager:
 
-* PubSubClient
-* WiFiManager
+* ESP8266WiFi.h
+* PubSubClient.h
 
 Now download the code from the repository to your system, unzip it and open the .ino file in the Arduino IDE. Once open, follow the comments in the code and enter the following information:
 
@@ -35,9 +35,11 @@ Lastly, go to Domoticz and check if the virtual sensor starts to dispay a value 
 
 The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls the leds and also outputs the serial TX data from the sensor. With the code we simply listen to the TX output of the uC, take 5 samples and calculate the average of these samples, create a MQTT message and publish the result to Domoticz.
 
-## Still to do
+## Some ideas
 
-Using the ArduinoJSON library to dynamically create the payload message, which is in my opinion a more elegant way of creating the payload message. 
+* Dynamically create the payload message using the ArduinoJSON library, which is probably a more elegant way of creating the payload message. 
+* The Wemos D1 Mini has plenty of pins available to add a BME280/BMP280 sensor board or a DS18B20 temperature sensor. The code can easily be adapted to accomodate these sensors. 
+* Another suggestion from the domoticz forum is to use the Alert Sensor Device to visualize the levels in color from grey to red e.g. good, moderate, potentially unhealthy, unhealthy, hazardous etc.
 
 The Wemos D1 Mini has plenty of pins available to add a BME280 sensor board or DS18B20 temperature sensor. The code can easily be adapted to accomodate these sensors.
 

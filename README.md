@@ -34,6 +34,7 @@ Now go to Domoticz and check if the virtual sensor starts to dispay a value in u
 ## Background information
 
 The VINDRIKTNING consists of Cubic PM1006-like Sensor + another uC that controls the leds and also outputs the serial TX data from the sensor. With the code we simply listen to the TX output of the uC, take 5 samples and calculate the average of these samples, create a MQTT message and publish the result to Domoticz.
+
 Because it is a generic sensor, the published values are in ug/m3 and not ppm. Ppm is typically used for specific sensors which measure the concentration of one type of gas with a specific weight, hence you can easily calculate the ppm. Converting the ug/m3 to ppm in case of the Ikea type of sensor is most likely going to provide unreliable values, as you would need to know the presence and percentage/concentration of each gas in your area and calculate the values accordingly.
 
 ## Some ideas

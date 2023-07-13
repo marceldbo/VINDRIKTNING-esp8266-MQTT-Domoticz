@@ -1,6 +1,12 @@
 ## VINDRIKTNING-esp8266-MQTT-Domoticz
 
-Based on the idea from Sören Beye, see reference below, to add an esp8266 e.g. Wemos D1 mini pro, to the IKEA VINDRIKTNING PM2.5 air quality sensor, this code will publish the calculated average via MQTT to Domoticz. 
+As of recently, the IKEA Vindriktning dust sensor is supported in "Collection E" of the ESPEasy project (please note that on the ESP Easy website https://espeasy.readthedocs.io/en/latest/Plugin/P144.html, the status shows "COLLECTION F", which is incorrect as of the latest version 20230623). In principle, the measurements from the PM1006(K) sensor are published via MQTT to Domoticz. The only difference to the wiring as described below, is that instead of wiring the REST pin to D2 of the Wemos D1 mini pro, we now wire the REST pin to D9 (GPIO3 - RX). In the ESPEasy configuration, we need to define the controller e.g. Domoticz MQTT, and add the device using serial port: HW Serial0. It is also advisable to disable or change the Serial Port Console Port in the "Advanced" settings of ESPEasy.
+
+If everything is properly configured it should work.
+
+## Original project description
+
+For reference purposes, and for those who prefer to use the firmware method instead of ESPEasy, the following is still valid. It is based on the idea from Sören Beye, see reference below, to add an esp8266 e.g. Wemos D1 mini pro, to the IKEA VINDRIKTNING PM2.5 air quality sensor, this code will publish the calculated average via MQTT to Domoticz.
 
 The first step is to create a virtual sensor in Domoticz to obtain a unique identifier (idx). Give the virtual sensor a name and use ug/m3 as the axis label. Save the device and take note of the idx value, since you will need this in the code later on.
 

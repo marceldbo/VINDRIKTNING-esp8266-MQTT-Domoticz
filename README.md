@@ -2,7 +2,7 @@
 
 Since the IKEA Vindriktning dust sensor is supported in "Collection E" of the ESPEasy project for a while now, there is no real need for the original project as described below. Please refer to the ESPEasy website https://espeasy.readthedocs.io/en/latest/Plugin/P144.html for more details. 
 
-There is a small difference in the wiring of the REST pin: instead of wiring the REST pin to D2 of the Wemos D1 mini pro, we now wire the REST pin to D9 (GPIO3 - RX). In the ESPEasy configuration, we need to define the controller e.g. Domoticz MQTT, and add the device using serial port: HW Serial0. It is also advisable to disable or change the Serial Port Console Port in the "Advanced" settings of ESPEasy.
+There is a small difference in the wiring of the REST pin: instead of wiring the REST pin to D2 of the Wemos D1 mini pro, we now wire the REST pin to RX (GPIO3 - D9). In the ESPEasy configuration, we need to define the controller e.g. Domoticz MQTT, and add the device using serial port: HW Serial0. It is also advisable to disable or change the Serial Port Console Port in the "Advanced" settings of ESPEasy.
 
 Since the unit was open anyway, I also added a BME/BMP280 and connected SDA to D2 (GPIO4 - SDA), SCL to D1 (GPIO5 - SCL), VIN to 3.3V and GND to Ground. Adding the sensor in ESPEasy and creating a Temp + Humidity + Baro sensor in Domoticz is pretty straight forward.
 
